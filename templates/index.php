@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='src/output.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME DRIVE</title>
+</head>
+
+<body>
+    <span>TEsting</span>
+</body>
+
+</html>
