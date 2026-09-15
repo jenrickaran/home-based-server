@@ -33,6 +33,6 @@ if username == checkUsername and password == checkPassword:
         return render_template("index.php")
 
     if __name__ == "__main__":
-        app.run(host=ip, port=8001)
+        app.run(host=ip, port=8001, debug=True)
 else:
     print("You entered wrong credentials.")
