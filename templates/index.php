@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME DRIVE</title>
+    <title>Nimbus Cloud</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="max-w-[608px] w-full">
-                <img src="{{ url_for('static', filename='pictures/illustration-frame.png') }}" alt="Illustration" class="w-full h-auto">
+                <img src="{{ url_for('static', filename='pictures/new-illustration.png') }}" alt="Illustration" class="w-full h-auto">
             </div>
         </section>
 
@@ -81,8 +81,8 @@
             </div>
         </section>
 
-        <section class="pt-[96px]">
-            <div>
+        <section class="py-[96px] flex flex-col items-center">
+            <div class="flex flex-col items-center mb-[48px]">
                 <h1 class="text-[32px] trusted-names-landing-page">
                     Key Features
                 </h1>
@@ -91,8 +91,43 @@
                 </h2>
             </div>
 
-            <div>
-
+            <div class="flex gap-[24px]">
+                <div class="flex flex-col p-[24px] gap-[16px] max-w-[302px] items-center border border-[#E2E8F0] rounded-2xl">
+                    <img src="{{ url_for('static', filename='svg/icon-cloud.svg') }}" alt="" srcset="" class="size-[48px]">
+                    <span class="font-bold">
+                        Cloud Storage
+                    </span>
+                    <span class="text-center">
+                        (Unlimited Scale) Securely host all document types.
+                    </span>
+                </div>
+                <div class="flex flex-col p-[24px] gap-[16px] max-w-[302px] items-center border border-[#E2E8F0] rounded-2xl">
+                    <img src="{{ url_for('static', filename='svg/icon-team.svg') }}" alt="" srcset="" class="size-[48px]">
+                    <span class="font-bold">
+                        Team Collaboration
+                    </span>
+                    <span class="text-center">
+                        (Live Edits) Work simultaneously with team folders.
+                    </span>
+                </div>
+                <div class="flex flex-col p-[24px] gap-[16px] max-w-[302px] items-center border border-[#E2E8F0] rounded-2xl">
+                    <img src="{{ url_for('static', filename='svg/icon-advance-security.svg') }}" alt="" srcset="" class="size-[48px]">
+                    <span class="font-bold">
+                        Advance Security
+                    </span>
+                    <span class="text-center">
+                        (Encryption) Zero-knowledge protection standard.
+                    </span>
+                </div>
+                <div class="flex flex-col p-[24px] gap-[16px] max-w-[302px] items-center border border-[#E2E8F0] rounded-2xl">
+                    <img src="{{ url_for('static', filename='svg/icon-synching.svg') }}" alt="" srcset="" class="size-[48px]">
+                    <span class="font-bold">
+                        Seamless Synching
+                    </span>
+                    <span class="text-center">
+                        (All Devices) Access from mobile, tablet, or web.
+                    </span>
+                </div>
             </div>
         </section>
     </main>
