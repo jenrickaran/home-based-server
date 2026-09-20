@@ -131,6 +131,24 @@
             </div>
         </section>
     </main>
+
+    <footer class="w-full max-w-[1440px] mx-auto px-[80px] pt-[80px] bg-[#0F172A] flex justify-between pb-[48px] rounded-lg">
+        <section class="flex flex-col max-w-[320px] gap-[20px]">
+            <div class="flex gap-[8px]">
+                <img src="{{ url_for('static', filename='svg/nimbus-cloud-logo.svg') }}" alt="logo" srcset="">
+                <a href="" class="text-xl footer-logo text-white">NimbusCloud</a>
+            </div>
+
+            <div>
+                <p class="text-[#94A3B8] text-[15px]">
+                    Next-generation secure cloud vaults. Store, sync, and collaborate seamlessly across all devices with military-grade privacy controls.
+                </p>
+            </div>
+        </section>
+        <section>
+
+        </section>
+    </footer>
 </body>
 
 </html>
