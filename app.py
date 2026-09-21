@@ -32,6 +32,10 @@ if username == checkUsername and password == checkPassword:
     def home():
         return render_template("index.php")
 
+    @app.route("/features")
+    def features():
+        return render_template("pages/features.php")
+
     if __name__ == "__main__":
         app.run(host=ip, port=8001, debug=True)
 else:

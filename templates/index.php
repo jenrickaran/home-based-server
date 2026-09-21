@@ -21,7 +21,7 @@
         </div>
 
         <nav class="font-semibold p-2 flex items-center text-[#475569] gap-[30px]">
-            <a href="">Features</a>
+            <a href="{{ url_for('features') }}">Features</a>
             <a href="">Pricing</a>
             <a href="">Security</a>
             <a href="">For Teams</a>
@@ -57,7 +57,9 @@
             </div>
 
             <div class="max-w-[608px] w-full">
-                <img src="{{ url_for('static', filename='pictures/new-illustration.png') }}" alt="Illustration" class="w-full h-auto">
+                <a href="https://www.vecteezy.com/free-vector/cloud-storage">
+                    <img src="{{ url_for('static', filename='pictures/cloud-computing.jpg') }}" alt="Illustration" class="w-full h-auto">
+                </a>
             </div>
         </section>
 
@@ -132,22 +134,66 @@
         </section>
     </main>
 
-    <footer class="w-full max-w-[1440px] mx-auto px-[80px] pt-[80px] bg-[#0F172A] flex justify-between pb-[48px] rounded-lg">
-        <section class="flex flex-col max-w-[320px] gap-[20px]">
-            <div class="flex gap-[8px]">
-                <img src="{{ url_for('static', filename='svg/nimbus-cloud-logo.svg') }}" alt="logo" srcset="">
-                <a href="" class="text-xl footer-logo text-white">NimbusCloud</a>
-            </div>
+    <footer class="w-full max-w-[1440px] mx-auto px-[80px] pt-[80px] bg-[#0F172A]  pb-[48px] rounded-lg">
+        <div class="flex justify-between mb-[64px]">
+            <section class="flex flex-col max-w-[320px] gap-[20px]">
+                <div class="flex gap-[8px]">
+                    <img src="{{ url_for('static', filename='svg/nimbus-cloud-logo.svg') }}" alt="logo" srcset="">
+                    <a href="" class="text-xl footer-logo text-white">NimbusCloud</a>
+                </div>
 
-            <div>
-                <p class="text-[#94A3B8] text-[15px]">
-                    Next-generation secure cloud vaults. Store, sync, and collaborate seamlessly across all devices with military-grade privacy controls.
-                </p>
-            </div>
-        </section>
-        <section>
+                <div>
+                    <p class="text-[#94A3B8] text-[15px]">
+                        Next-generation secure cloud vaults. Store, sync, and collaborate seamlessly across all devices with military-grade privacy controls.
+                    </p>
+                </div>
+            </section>
 
-        </section>
+            <section class="flex gap-[64px]">
+                <div class="flex flex-col gap-[16px] text-[#94A3B8]">
+                    <h1 class="font-bold text-white">
+                        PRODUCT
+                    </h1>
+                    <a href="">Features</a>
+                    <a href="">Pricing</a>
+                    <a href="">Security</a>
+                    <a href="">Teams</a>
+                </div>
+
+                <div class="flex flex-col gap-[16px] text-[#94A3B8]">
+                    <h1 class="font-bold text-white">
+                        RESOURCES
+                    </h1>
+                    <a href="">Documentation</a>
+                    <a href="">Guides</a>
+                    <a href="">API Status</a>
+                    <a href="">Community</a>
+                </div>
+
+                <div class="flex flex-col gap-[16px] text-[#94A3B8]">
+                    <h1 class="font-bold text-white">
+                        COMPANY
+                    </h1>
+                    <a href="">About Us</a>
+                    <a href="">Careers</a>
+                    <a href="">Press Kit</a>
+                    <a href="">Contact Support</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="flex flex-col gap-[32px]">
+            <hr class="h-px w-full bg-[#334155] rounded-full">
+            <div class="flex justify-between">
+                <p class="text-[#94A3B8]">© 2026 NimbusCloud Inc. All rights reserved.</p>
+
+                <div class="flex text-[#94A3B8] gap-[24px]">
+                    <a href="">Terms of Services</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">SLA</a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
