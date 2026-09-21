@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nimbus Cloud</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -21,7 +22,7 @@
         </div>
 
         <nav class="font-semibold p-2 flex items-center text-[#475569] gap-[30px]">
-            <a href="{{ url_for('features') }}">Features</a>
+            <a href="#" id="featuresLink">Features</a>
             <a href="">Pricing</a>
             <a href="">Security</a>
             <a href="">For Teams</a>
@@ -35,7 +36,7 @@
         </div>
     </header>
 
-    <main class="w-full max-w-[1440px] mx-auto px-[80px]">
+    <main class="w-full max-w-[1440px] mx-auto px-[80px]" id="landingPage">
         <section class="flex pt-[96px] gap-[64px] items-center justify-between mb-10">
             <div class="max-w-[608px] flex flex-col gap-4">
                 <h1 class="text-[56px] font-extrabold" id="title-hero-landing">
@@ -134,6 +135,9 @@
         </section>
     </main>
 
+    <main class="w-full max-w-[1440px] mx-auto px-[80px] hidden" id="featuresPage">
+    </main>
+
     <footer class="w-full max-w-[1440px] mx-auto px-[80px] pt-[80px] bg-[#0F172A]  pb-[48px] rounded-lg">
         <div class="flex justify-between mb-[64px]">
             <section class="flex flex-col max-w-[320px] gap-[20px]">
@@ -154,7 +158,7 @@
                     <h1 class="font-bold text-white">
                         PRODUCT
                     </h1>
-                    <a href="">Features</a>
+                    <a href="#" id="featuresLinkFooter">Features</a>
                     <a href="">Pricing</a>
                     <a href="">Security</a>
                     <a href="">Teams</a>
@@ -183,7 +187,7 @@
         </div>
 
         <div class="flex flex-col gap-[32px]">
-            <hr class="h-px w-full bg-[#334155] rounded-full">
+            <hr class="h-1 w-full bg-[#334155] rounded-full">
             <div class="flex justify-between">
                 <p class="text-[#94A3B8]">© 2026 NimbusCloud Inc. All rights reserved.</p>
 
