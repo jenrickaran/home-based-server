@@ -18,11 +18,11 @@
     <header class="w-full max-w-[1440px] mx-auto px-[80px] py-[20px] flex justify-between items-center">
         <div class="p-2 font-bold flex items-center">
             <img src="{{ url_for('static', filename='svg/nimbus-cloud-logo.svg') }}" alt="logo" class="pr-2">
-            <a href="" class="text-xl">NimbusCloud</a>
+            <a href="{{ url_for('home') }}" class="text-xl text-[#0F172A] name-logo">NimbusCloud</a>
         </div>
 
         <nav class="font-semibold p-2 flex items-center text-[#475569] gap-[30px]">
-            <a href="#" id="featuresLink">Features</a>
+            <a href="{{ url_for('features') }}">Features</a>
             <a href="">Pricing</a>
             <a href="">Security</a>
             <a href="">For Teams</a>
@@ -135,9 +135,6 @@
         </section>
     </main>
 
-    <main class="w-full max-w-[1440px] mx-auto px-[80px] hidden" id="featuresPage">
-    </main>
-
     <footer class="w-full max-w-[1440px] mx-auto px-[80px] pt-[80px] bg-[#0F172A]  pb-[48px] rounded-lg">
         <div class="flex justify-between mb-[64px]">
             <section class="flex flex-col max-w-[320px] gap-[20px]">
@@ -158,7 +155,7 @@
                     <h1 class="font-bold text-white">
                         PRODUCT
                     </h1>
-                    <a href="#" id="featuresLinkFooter">Features</a>
+                    <a href="{{ url_for('features') }}">Features</a>
                     <a href="">Pricing</a>
                     <a href="">Security</a>
                     <a href="">Teams</a>
