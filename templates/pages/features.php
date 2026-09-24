@@ -59,20 +59,32 @@
             </div>
         </section>
 
-        <section class="bg-[#F8FAFC] py-[48px] flex items-center jusfity-between gap-[64px] rounded-lg">
+        <section class="bg-[#F8FAFC] py-[80px] flex items-center jusfity-between gap-[64px] rounded-lg">
             <div class="max-w-[520px]">
-                <img src="{{ url_for('static', filename='pictures/cloud-engine.jpg') }}" alt="" srcset="">
+                <img src="{{ url_for('static', filename='pictures/cloud-engine.png') }}" alt="" srcset="">
             </div>
 
             <div class="max-w-[696px]">
-                <h1 class="text-[32px] font-black">
+                <h1 class="text-[32px] font-black mb-[16px]">
                     Delta-Sync Engine
                 </h1>
-                <p class="text-[16px] text-[#475569]">
+                <p class="text-[16px] text-[#475569] mb-[32px]">
                     Our smart upload systems detect precise block modifications within files. Instead of
                     re-uploading large datasets, only modified parts are transferred,
                     preserving your bandwidth and battery lifespan.
                 </p>
+                <div class="flex gap-[12px]">
+                    <img src="{{ url_for('static', filename='svg/icon-check.svg') }}" alt="" srcset="">
+                    <h1 class="text-[#0F172A] font-semibold">Smart Bandwidth Allocation</h1>
+                </div>
+                <div class="flex gap-[12px]">
+                    <img src="{{ url_for('static', filename='svg/icon-check.svg') }}" alt="" srcset="">
+                    <h1 class="text-[#0F172A] font-semibold">Instant Multi-device Propagation</h1>
+                </div>
+                <div class="flex gap-[12px]">
+                    <img src="{{ url_for('static', filename='svg/icon-check.svg') }}" alt="" srcset="">
+                    <h1 class="text-[#0F172A] font-semibold">Comprehensive 30-Day Versioning Logs</h1>
+                </div>
             </div>
         </section>
 
