@@ -59,23 +59,20 @@
             </div>
         </section>
 
-        <section class="bg-[#F8FAFC] py-[48px] flex flex-col items-center gap-[24px] rounded-lg">
-            <div>
-                <h2 class="text-gray-600 text-[12px] font-bold">
-                    Trusted By Innovative Individuals
-                </h2>
+        <section class="bg-[#F8FAFC] py-[48px] flex items-center jusfity-between gap-[64px] rounded-lg">
+            <div class="max-w-[520px]">
+                <img src="{{ url_for('static', filename='pictures/cloud-engine.jpg') }}" alt="" srcset="">
             </div>
 
-            <div class="flex gap-10">
-                <h2 class="text-gray-600 text-[20px] trusted-names-landing-page">
-                    Cresha Pritz B. Lobarbio
-                </h2>
-                <h2 class="text-gray-600 text-[20px] trusted-names-landing-page">
-                    William James J. Lagonoy
-                </h2>
-                <h2 class="text-gray-600 text-[20px] trusted-names-landing-page">
-                    Jenrick P. Aran
-                </h2>
+            <div class="max-w-[696px]">
+                <h1 class="text-[32px] font-black">
+                    Delta-Sync Engine
+                </h1>
+                <p class="text-[16px] text-[#475569]">
+                    Our smart upload systems detect precise block modifications within files. Instead of
+                    re-uploading large datasets, only modified parts are transferred,
+                    preserving your bandwidth and battery lifespan.
+                </p>
             </div>
         </section>
 
