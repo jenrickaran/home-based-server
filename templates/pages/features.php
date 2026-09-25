@@ -23,7 +23,7 @@
         </div>
 
         <nav class="font-semibold p-2 flex items-center text-[#475569] gap-[30px]">
-            <a href="{{ url_for('features') }}">Features</a>
+            <a href="{{ url_for('features') }}" class="text-[#0EA5E9]">Features</a>
             <a href="">Pricing</a>
             <a href="">Security</a>
             <a href="">For Teams</a>
@@ -91,10 +91,10 @@
         <section class="py-[96px] flex flex-col items-center">
             <div class="flex flex-col items-center mb-[48px]">
                 <h1 class="text-[32px] trusted-names-landing-page">
-                    Key Features
+                    The Architecture of Convenience
                 </h1>
                 <h2 class="text-[16px]">
-                    Everything you need to manage and secure your files
+                    A comprehensive toolkit tailored to handle high-density files
                 </h2>
             </div>
 
