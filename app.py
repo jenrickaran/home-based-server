@@ -36,6 +36,10 @@ if username == checkUsername and password == checkPassword:
     def features():
         return render_template("pages/features.php")
 
+    @app.route("/pricing")
+    def features():
+        return render_template("pages/pricing.php")
+
     if __name__ == "__main__":
         app.run(host=ip, port=8001, debug=True)
 else:
